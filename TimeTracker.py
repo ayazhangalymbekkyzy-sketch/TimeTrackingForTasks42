@@ -1,3 +1,4 @@
+#10
 import numpy as np
 from datetime import datetime
 
@@ -25,8 +26,3 @@ class TimeTracker:
 if __name__ == "__main__":
     tracker = TimeTracker()
 
-    tracker.add_record("Учёба", 50, "2026-04-01")
-    tracker.add_record("Спорт", 30, "2026-04-01")
-    tracker.add_record("Проект", 120, "2026-04-02")
-
-    print("Общая сумма минут:", tracker.total_minutes())
