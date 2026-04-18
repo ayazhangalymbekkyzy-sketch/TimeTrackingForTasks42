@@ -1,6 +1,7 @@
 from TaskManager import TaskManager
 from TimeTracker import TimeTracker
 from TimeJournal import TimeJournal
+from TimeJournalSummary import TimeJournalSummary
 import numpy as np
 
 if __name__ == "__main__":
@@ -27,3 +28,13 @@ if __name__ == "__main__":
     t3.add_record("Проект", 120, "2026-04-03")
 
     print(t3.to_dataframe())
+
+    print("\n===== Summary =====")
+
+    t4 = TimeJournalSummary()
+    t4.add_record("Учёба", 50, "2026-04-02")
+    t4.add_record("Учёба", 40, "2026-04-03")
+    t4.add_record("Спорт", 30, "2026-04-01")
+
+    print(t4.get_summary())
+    t4.save_to_csv()
