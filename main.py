@@ -11,7 +11,7 @@ if __name__ == "__main__":
     t1 = TaskManager()
     t1.add_task("Учёба", 50, "2026-04-02")
     t1.add_task("Спорт", 30, "2026-04-01")
-    print("Total (9):", t1.total_minutes())
+    t1.show_tasks()
 #10
     print("\n===== TimeTracker =====")
     t2 = TimeTracker()
