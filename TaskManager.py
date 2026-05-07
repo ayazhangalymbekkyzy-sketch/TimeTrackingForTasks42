@@ -1,6 +1,5 @@
 #9
 from datetime import datetime
-import numpy as np
 
 class TaskManager:
     def __init__(self):
@@ -37,9 +36,6 @@ class TaskManager:
         for t in self.tasks:
             print(f"{t['task_name']} — {t['minutes']} мин — {t['date']}")
 
-    def total_minutes(self):
-        arr = np.array([t["minutes"] for t in self.tasks])
-        return np.sum(arr)
 
 
 
